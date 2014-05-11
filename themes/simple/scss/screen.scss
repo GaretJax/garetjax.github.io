@@ -1,6 +1,6 @@
 @import "compass";
 
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,600italic,400|Patua+One);
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,600italic,400|Patua+One');
 
 $width: 640px;
 
@@ -169,3 +169,5 @@ code {
 .content {
 	
 }
+
+@import "code";
