@@ -1,5 +1,7 @@
 __pycache__
 .virtualenv
 .doit.db
+.sass-cache
 cache
 output
+themes/simple/assets/css/*
