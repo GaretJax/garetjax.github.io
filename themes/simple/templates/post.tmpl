@@ -1,0 +1,16 @@
+{#  -*- coding: utf-8 -*- #}
+{% extends 'base.tmpl' %}
+
+{% block content %}
+<article class="content post">
+	<h1>{{ title|e }}</h1>
+
+	<ul class="meta">
+		<li><time class="published dt-published" datetime="{{ post.date.isoformat() }}" itemprop="datePublished">{{ post.formatted_date(date_format) }}</time></li>
+		<li><a href="{{ post.source_link() }}" id="sourcelink">Source</a></li>
+		<li><a href="{{ post.permalink(absolute=True) }}" id="permalink">Permanent link</a></li>
+	</ul>
+	
+	<div>{{ post.text() }}</div>
+</article>
+{% endblock %}

@@ -1,0 +1,21 @@
+{#  -*- coding: utf-8 -*- #}
+{% extends "base.tmpl" %}
+
+{% set htmlid='index2' %}
+
+{% block headere %}
+	<header id="title">
+		<img src="https://secure.gravatar.com/avatar/0340081d861ced6802ff4861313bbc55?s=100&d=retro&r=g" />
+		<h1><a href="{{ abs_link('/') }}" rel="home">{{ blog_title }}</a></h1>
+	</header>
+	<hr/>
+{% endblock %}
+
+{% block content %}
+	<h2>Latest entries</h2>
+	{% for post in posts %}
+		<article>
+			<h1><a href="{{ post.permalink() }}">{{ post.title() }}</a></h1>
+		</article>
+	{% endfor %}
+{% endblock %}
