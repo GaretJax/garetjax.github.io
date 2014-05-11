@@ -3,21 +3,18 @@
 from __future__ import unicode_literals
 import time
 
-#!! This is the configuration of Nikola. !!#
-#!!  You should edit it to your liking.  !!#
-
 
 # Data about this site
-BLOG_AUTHOR = "Your Name"
-BLOG_TITLE = "Demo Site"
+BLOG_AUTHOR = "Jonathan Stoppani"
+BLOG_TITLE = "jonathan.stoppani.name"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://getnikola.com/"
+SITE_URL = "/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://getnikola.com/"
-BLOG_EMAIL = "joe@demo.site"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."
+BASE_URL = "http://jonathan.stoppani.name/"
+BLOG_EMAIL = "jonathan@stoppani.name"
+BLOG_DESCRIPTION = "Jonathan Stoppani's personal blog."
 
 # Nikola is multilingual!
 #
@@ -134,9 +131,11 @@ POSTS = (
     ("posts/*.markdown", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
 )
+
 PAGES = (
-("stories/*.rst", "stories", "story.tmpl"),
-("stories/*.txt", "stories", "story.tmpl"),
+    ("stories/*.rst", "stories", "story.tmpl"),
+    ("stories/*.markdown", "stories", "story.tmpl"),
+    ("stories/*.txt", "stories", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -326,19 +325,20 @@ COMPILERS = {
 # Data about post-per-page indexes.
 # INDEXES_PAGES defaults to 'old posts, page %d' or 'page %d' (translated),
 # depending on the value of INDEXES_PAGES_MAIN.
-# INDEXES_TITLE = ""         # If this is empty, defaults to BLOG_TITLE
-# INDEXES_PAGES = ""         # If this is empty, defaults to '[old posts,] page %d' (see above)
-# INDEXES_PAGES_MAIN = False # If True, INDEXES_PAGES is also displayed on
-                             # the main (the newest) index page (index.html)
+# INDEXES_TITLE = ""          # If this is empty, defaults to BLOG_TITLE
+# INDEXES_PAGES = ""          # If this is empty, defaults to '[old posts,]
+                              # page %d' (see above)
+# INDEXES_PAGES_MAIN = False  # If True, INDEXES_PAGES is also displayed on
+                              # the main (the newest) index page (index.html)
 
 # Name of the theme to use.
-THEME = "bootstrap3"
+THEME = "simple"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
 # Can be any of autumn borland bw colorful default emacs friendly fruity manni
 # monokai murphy native pastie perldoc rrt tango trac vim vs
-# CODE_COLOR_SCHEME = 'default'
+CODE_COLOR_SCHEME = 'native'
 
 # If you use 'site-reveal' theme you can select several subthemes
 # THEME_REVEAL_CONFIG_SUBTHEME = 'sky'
@@ -351,7 +351,7 @@ THEME = "bootstrap3"
 
 # date format used to display post dates.
 # (str used by datetime.datetime.strftime)
-# DATE_FORMAT = '%Y-%m-%d %H:%M'
+DATE_FORMAT = '%A, %B %d, %Y'
 
 # FAVICONS contains (name, file, size) tuples.
 # Used for create favicon link like this:
@@ -490,7 +490,13 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # What MarkDown extensions to enable?
 # You will also get gist, nikola and podcast because those are
 # done in the code, hope you don't mind ;-)
-# MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite']
+MARKDOWN_EXTENSIONS = [
+    #'fenced_code',
+    'codehilite',
+    'smarty',
+    'headerid',
+    'footnotes',
+]
 
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
@@ -714,3 +720,6 @@ LOGGING_HANDLERS = {
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {}
+
+GITHUB_DEPLOY_BRANCH = 'master'
+GITHUB_SOURCE_BRANCH = 'sources'
