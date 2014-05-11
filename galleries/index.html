@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html><body>
+<p>## -*- coding: utf-8 -*-
+
+
+
+%block&gt;
+
+
+    ${ui.bar(crumbs)}
+    %if title:
+    </p>
+<h1>${title}</h1>
+    %endif
+    %if post:
+    <p>
+        ${post.text()}
+    </p>
+    %endif
+    %if folders:
+    <ul>
+    % for folder, ftitle in folders:
+        <li><a href="%24%7Bfolder%7D"><i class="icon-folder-open"></i> ${ftitle}</a></li>
+    % endfor
+    </ul>
+    %endif
+    %if photo_array:
+    <ul class="thumbnails">
+        %for image in photo_array:
+            <li>
+<a href="%24%7Bimage%5B'url'%5D%7D" class="thumbnail image-reference" title="${image['title']}">
+                <img src="%24%7Bimage%5B'url_thumb'%5D%7D" alt="${image['title']}"></a>
+        %endfor
+    </li>
+</ul>
+    %endif
+%if site_has_comments and enable_comments:
+    ${comments.comment_form(None, permalink, title)}
+%endif
+%block&gt;</body></html>

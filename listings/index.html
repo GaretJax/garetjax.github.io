@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><body>
+<p>## -*- coding: utf-8 -*-
+
+
+
+${ui.bar(crumbs)}
+%if folders or files:
+</p>
+<ul>
+% for name in folders:
+    <li>
+<a href="%24%7Bname%7D"><i class="icon-folder-open"></i> ${name}</a>
+% endfor
+% for name in files:
+    </li>
+<li>
+<a href="%24%7Bname%7D.html"><i class="icon-file"></i> ${name}</a>
+% endfor
+</li>
+</ul>
+%endif
+% if code:
+    ${code}
+% endif
+% if source_link:
+    <p class="sourceline"><a href="%24%7Bsource_link%7D" id="sourcelink">${messages("Source")}</a></p>
+% endif
+%block&gt;
+</body></html>

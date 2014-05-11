@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><body><p>## -*- coding: utf-8 -*-
+
+
+
+<article class="listpage">
+    <header>
+        <h1>${title}</h1>
+    </header>
+    %if posts:
+    <ul class="postlist">
+    % for post in posts:
+        <li>
+<a href="%24%7Bpost.permalink()%7D" class="listtitle">${post.title()}</a> <time class="listdate" datetime="${post.date.isoformat()}" title="${messages(" publication date>${post.formatted_date(date_format)}</time>
+</li>
+    % endfor
+    </ul>
+    %else:
+    <p>${messages("No posts found.")}</p>
+    %endif
+</article>
+%block&gt;</p></body></html>
