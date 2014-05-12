@@ -164,6 +164,33 @@ code {
 	}
 }
 
+div.tags {
+	color: #999;
+	font-size: 0.9em;
+	margin-top: 2.5em;
+	ul {
+		display: inline-block;
+		margin: 0 0 0 5px;
+		padding: 0;
+	}
+	li {
+		padding: 0 3px;
+		display: inline-block;
+	}
+	a {
+		font-weight: normal;
+		background: #8dc4e8;
+		color: #fff;
+		padding: 2px 10px 3px;
+		@include border-radius(20px);
+		border-bottom: 1px solid #649eed;
+		text-shadow: #649eed 0 1px 0, rgba(#000, .2) 0 0 3px;
+	}
+	a:hover {
+		text-decoration: none;
+		background: #649eed;
+	}
+}
 
 
 .content {
