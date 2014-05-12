@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,600italic,400|Patua+One");
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,600italic,400,600|Patua+One);
 /* line 7, ../../scss/screen.scss */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -73,12 +73,6 @@ footer {
 }
 
 /* line 70, ../../scss/screen.scss */
-h1 {
-  font-family: 'Patua One', cursive;
-  color: #333;
-}
-
-/* line 75, ../../scss/screen.scss */
 h2 {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
@@ -87,65 +81,50 @@ h2 {
   font-style: italic;
 }
 
-/* line 83, ../../scss/screen.scss */
+/* line 78, ../../scss/screen.scss */
 a {
   text-decoration: none;
   color: #2866b3;
 }
-/* line 87, ../../scss/screen.scss */
+/* line 82, ../../scss/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 92, ../../scss/screen.scss */
+/* line 87, ../../scss/screen.scss */
 .meta {
   color: #666;
   font-size: .8em;
   margin: 0 0 2.5em 0;
   padding: 0;
 }
-/* line 98, ../../scss/screen.scss */
+/* line 93, ../../scss/screen.scss */
 .meta li {
   display: inline;
 }
-/* line 101, ../../scss/screen.scss */
+/* line 96, ../../scss/screen.scss */
 .meta li + li:before {
   content: " ∙ ";
 }
 
-/* line 108, ../../scss/screen.scss */
+/* line 103, ../../scss/screen.scss */
 article > h1 {
   margin-bottom: .4em;
 }
 
-/* line 113, ../../scss/screen.scss */
-code {
-  color: #444;
-  background: #f3f3f3;
-  border: 1px solid #e3e3e3;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  display: inline-block;
-  padding: 0 3px 1px 3px;
-  margin: 0 0 -1px 0;
-  font-size: 0.9em;
-  font-family: 'Source Code Pro', monospace;
-}
-
-/* line 125, ../../scss/screen.scss */
+/* line 108, ../../scss/screen.scss */
 .codehilitetable {
   border-collapse: collapse;
   width: 722px;
   margin-left: -68px;
-  line-height: 19px;
-  font-size: 13px;
+  line-height: 20px;
+  font-size: 14px;
 }
-/* line 135, ../../scss/screen.scss */
+/* line 118, ../../scss/screen.scss */
 .codehilitetable td {
   padding: 0;
 }
-/* line 139, ../../scss/screen.scss */
+/* line 122, ../../scss/screen.scss */
 .codehilitetable .linenos {
   width: 40px;
   color: #555;
@@ -157,22 +136,104 @@ code {
   -webkit-transition: opacity 0.4s ease-out;
   transition: opacity 0.4s ease-out;
 }
-/* line 147, ../../scss/screen.scss */
+/* line 130, ../../scss/screen.scss */
 .codehilitetable .linenos pre {
   margin: 0;
 }
-/* line 151, ../../scss/screen.scss */
+/* line 134, ../../scss/screen.scss */
 .codehilitetable:hover .linenos {
   opacity: 1;
 }
-/* line 158, ../../scss/screen.scss */
+/* line 141, ../../scss/screen.scss */
 .codehilitetable td.code pre {
   margin: 0;
-  padding: 10px 14px;
+  padding: 15px 14px 18px;
   font-family: 'Source Code Pro', monospace;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+}
+
+/* line 150, ../../scss/screen.scss */
+div.tags {
+  color: #999;
+  font-size: 0.9em;
+  margin-top: 2.5em;
+}
+/* line 154, ../../scss/screen.scss */
+div.tags ul {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+/* line 159, ../../scss/screen.scss */
+div.tags li {
+  padding: 0 3px;
+  display: inline-block;
+}
+/* line 163, ../../scss/screen.scss */
+div.tags a {
+  font-weight: normal;
+  background: #8dc4e8;
+  color: #fff;
+  padding: 2px 10px 3px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border-bottom: 1px solid #649eed;
+  text-shadow: #649eed 0 1px 0, rgba(0, 0, 0, 0.2) 0 0 3px;
+}
+/* line 172, ../../scss/screen.scss */
+div.tags a:hover {
+  text-decoration: none;
+  background: #649eed;
+}
+
+/* line 179, ../../scss/screen.scss */
+.content {
+  line-height: 1.5em;
+}
+/* line 182, ../../scss/screen.scss */
+.content h1 {
+  font-family: 'Patua One', cursive;
+  font-size: 1.6em;
+  color: #333;
+}
+/* line 188, ../../scss/screen.scss */
+.content h2 {
+  font-family: 'Patua One', cursive;
+  font-style: normal;
+  color: #333;
+  margin-top: 2em;
+  font-size: 1.3em;
+}
+/* line 196, ../../scss/screen.scss */
+.content code {
+  color: #444;
+  background: #f3f3f3;
+  border: 1px solid #e3e3e3;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 0 3px 1px 3px;
+  margin: 0 0 -1px 0;
+  line-height: 1.2em;
+  font-size: 0.9em;
+  font-family: 'Source Code Pro', monospace;
+}
+/* line 209, ../../scss/screen.scss */
+.content a {
+  font-weight: normal;
+}
+/* line 213, ../../scss/screen.scss */
+.content a > code {
+  color: inherit;
+  font-weight: normal;
+}
+/* line 217, ../../scss/screen.scss */
+.content a:hover > code {
+  text-decoration: underline;
 }
 
 /* line 1, ../../scss/_code.scss */
@@ -407,8 +468,7 @@ code {
 }
 /* line 40, ../../scss/_code.scss */
 .code pre .nc {
-  color: #447fcf;
-  text-decoration: underline;
+  color: #5699f5;
 }
 /* line 41, ../../scss/_code.scss */
 .code pre .no {
@@ -428,7 +488,7 @@ code {
 }
 /* line 45, ../../scss/_code.scss */
 .code pre .nf {
-  color: #447fcf;
+  color: #5699f5;
 }
 /* line 46, ../../scss/_code.scss */
 .code pre .nl {
@@ -436,8 +496,7 @@ code {
 }
 /* line 47, ../../scss/_code.scss */
 .code pre .nn {
-  color: #447fcf;
-  text-decoration: underline;
+  color: #5699f5;
 }
 /* line 48, ../../scss/_code.scss */
 .code pre .nx {
