@@ -14,8 +14,9 @@
 {% block content %}
 	<h2>Latest entries</h2>
 	{% for post in posts %}
-		<article>
+		<article class="content excerpt">
 			<h1><a href="{{ post.permalink() }}">{{ post.title() }}</a></h1>
+			<time class="published dt-published" datetime="{{ post.date.isoformat() }}" itemprop="datePublished">{{ post.formatted_date(date_format) }}</time>
 		</article>
 	{% endfor %}
 {% endblock %}

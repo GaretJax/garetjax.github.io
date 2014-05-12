@@ -175,6 +175,31 @@ div.tags {
 	}
 }
 
+.excerpt {
+	margin-top: 2em;
+
+	time {
+		color: #666;
+	}
+
+	& + .excerpt {
+		h1 {
+			padding-top: (2em/1.6);
+			margin-top: 0;
+		}
+		&:before {
+			content: " ";
+			font-size: 0;
+			display: block;
+			border-bottom: 1px solid #ddd;
+			width: 20px;
+		}
+	}
+
+	& + footer {
+		margin-top: (2em/0.8);
+	}
+}
 
 .content {
 	line-height: 1.5em;
@@ -183,6 +208,7 @@ div.tags {
 		font-family: 'Patua One', cursive;
 		font-size: 1.6em;
 		color: #333;
+		font-weight: bold;
 	}
 
 	h2 {
