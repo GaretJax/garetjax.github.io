@@ -189,17 +189,44 @@ div.tags a:hover {
   background: #649eed;
 }
 
-/* line 179, ../../scss/screen.scss */
+/* line 178, ../../scss/screen.scss */
+.excerpt {
+  margin-top: 2em;
+}
+/* line 181, ../../scss/screen.scss */
+.excerpt time {
+  color: #666;
+}
+/* line 186, ../../scss/screen.scss */
+.excerpt + .excerpt h1 {
+  padding-top: 1.25em;
+  margin-top: 0;
+}
+/* line 190, ../../scss/screen.scss */
+.excerpt + .excerpt:before {
+  content: " ";
+  font-size: 0;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  width: 20px;
+}
+/* line 199, ../../scss/screen.scss */
+.excerpt + footer {
+  margin-top: 2.5em;
+}
+
+/* line 204, ../../scss/screen.scss */
 .content {
   line-height: 1.5em;
 }
-/* line 182, ../../scss/screen.scss */
+/* line 207, ../../scss/screen.scss */
 .content h1 {
   font-family: 'Patua One', cursive;
   font-size: 1.6em;
   color: #333;
+  font-weight: bold;
 }
-/* line 188, ../../scss/screen.scss */
+/* line 214, ../../scss/screen.scss */
 .content h2 {
   font-family: 'Patua One', cursive;
   font-style: normal;
@@ -207,7 +234,7 @@ div.tags a:hover {
   margin-top: 2em;
   font-size: 1.3em;
 }
-/* line 196, ../../scss/screen.scss */
+/* line 222, ../../scss/screen.scss */
 .content code {
   color: #444;
   background: #f3f3f3;
@@ -222,16 +249,16 @@ div.tags a:hover {
   font-size: 0.9em;
   font-family: 'Source Code Pro', monospace;
 }
-/* line 209, ../../scss/screen.scss */
+/* line 235, ../../scss/screen.scss */
 .content a {
-  font-weight: normal;
+  font-weight: 600;
 }
-/* line 213, ../../scss/screen.scss */
+/* line 239, ../../scss/screen.scss */
 .content a > code {
   color: inherit;
   font-weight: normal;
 }
-/* line 217, ../../scss/screen.scss */
+/* line 243, ../../scss/screen.scss */
 .content a:hover > code {
   text-decoration: underline;
 }
