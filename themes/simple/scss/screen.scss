@@ -9,6 +9,7 @@ body {
 	width: $width;
 	padding: 0;
 	margin: 40px auto;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 #title {
@@ -23,7 +24,7 @@ body {
 		font-size: 20px;
 		color: #999;
 		font-family: 'Open Sans', sans-serif;
-		margin-bottom: 40px;
+		margin-bottom: 34px;
 		font-weight: 300;
 		font-style: italic;
 
@@ -77,31 +78,10 @@ h2 {
 
 a {
 	text-decoration: none;
-	color: #2866b3;
+	color: #3468a9;
 
 	&:hover {
 		text-decoration: underline;
-	}
-}
-
-.meta {
-	color: #666;
-	font-size: .8em;
-	margin: 0 0 2.5em 0;
-	padding: 0;
-
-	li {
-		display: inline;
-	}
-	li + li:before {
-		content: " ∙ ";
-	}
-}
-
-
-article {
-	> h1 {
-		margin-bottom: .4em;
 	}
 }
 
@@ -178,6 +158,15 @@ div.tags {
 .excerpt {
 	margin-top: 2em;
 
+	h1 {
+		font-family: 'Patua One', cursive;
+		font-size: 1.6em;
+		color: #333;
+		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: .4em;
+	}
+
 	time {
 		color: #666;
 	}
@@ -201,15 +190,33 @@ div.tags {
 	}
 }
 
-.content {
-	line-height: 1.5em;
-
+.post {
 	h1 {
 		font-family: 'Patua One', cursive;
 		font-size: 1.6em;
 		color: #333;
 		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: .4em;
 	}
+
+	.meta {
+		color: #666;
+		font-size: .8em;
+		margin: 0 0 2.5em 0;
+		padding: 0;
+
+		li {
+			display: inline;
+		}
+		li + li:before {
+			content: " ∙ ";
+		}
+	}
+}
+
+.content {
+	line-height: 1.5em;
 
 	h2 {
 		font-family: 'Patua One', cursive;
