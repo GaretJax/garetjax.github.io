@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html><body><p>## -*- coding: utf-8 -*-
+
+
+
+    ${parent.extra_head()}
+    %if len(translations) &gt; 1 and generate_rss:
+        %for language in translations:
+            <link rel="alternate" type="application/rss+xml" title="RSS for ${kind} ${tag} (${language})" href="%24%7B_link(kind%20+" _rss tag language>
+        %endfor
+    %elif generate_rss:
+        <link rel="alternate" type="application/rss+xml" title="RSS for ${kind} ${tag}" href="%24%7B_link(kind%20+" _rss tag>
+    %endif
+%block&gt;
+
+
+
+<article class="tagpage">
+    <header>
+        <h1>${title}</h1>
+        <div class="metadata">
+            %if len(translations) &gt; 1 and generate_rss:
+                %for language in translations:
+                <p class="feedlink">
+                    <a href="%24%7B_link(kind%20+" _rss tag language hreflang="${language}" type="application/rss+xml">${messages('RSS feed', language)} (${language})</a> 
+                </p>
+                %endfor
+            %elif generate_rss:
+                <p class="feedlink"><a href="%24%7B_link(kind%20+" _rss tag type="application/rss+xml">${messages('RSS feed')}</a></p>
+            %endif
+        </div>
+    </header>
+    %if posts:
+    <ul class="postlist">
+    % for post in posts:
+        <li>
+<a href="%24%7Bpost.permalink()%7D" class="listtitle">${post.title()}</a> <time class="listdate" datetime="${post.date.isoformat()}" title="${messages(" publication date>${post.formatted_date(date_format)}</time>
+</li>
+    % endfor
+    </ul>
+    %endif
+</article>
+%block&gt;</p></body></html>
