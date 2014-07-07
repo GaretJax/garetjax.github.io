@@ -2,7 +2,7 @@
 .. title: Throttling requests using Flask and Selenium
 .. slug: throttling-requests-using-flask-and-selenium
 .. date: 05/12/2014 03:56:44 PM UTC
-.. tags: selenium, Flask, testing, python
+.. tags: selenium, flask, testing, python
 .. link: 
 .. description: 
 .. type: text
