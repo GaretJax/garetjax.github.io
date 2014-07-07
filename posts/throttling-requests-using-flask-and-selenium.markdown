@@ -56,20 +56,20 @@ If we start the application right now, we can already test this behavior
 from the command line:
 
     :::bash
-    python app.py
+    $ python app.py
 
 In a separate session, run the following two commands, once without setting
 any cookies...
 
     :::bash
-    time curl localhost:5000
+    $ time curl localhost:5000
     Hello World!
     curl localhost:5000  0.00s user 0.00s system 62% cpu 0.005 total
 
 And once by setting a delay of 5 seconds:
 
     :::bash
-    time curl --cookie delay=5 localhost:5000
+    $ time curl --cookie delay=5 localhost:5000
     Hello World!
     curl --cookie delay=5 localhost:5000  0.00s user 0.00s system 0% cpu 5.013 total
 
