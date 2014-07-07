@@ -6,34 +6,46 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://jonathan.stoppani.name/2014/index.html</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
  </url>
  <url>
   <loc>http://jonathan.stoppani.name/archive.html</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
+ </url>
+ <url>
+  <loc>http://jonathan.stoppani.name/categories/flask.html</loc>
+  <lastmod>2014-07-07</lastmod>
  </url>
  <url>
   <loc>http://jonathan.stoppani.name/categories/index.html</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
  </url>
  <url>
   <loc>http://jonathan.stoppani.name/categories/pytest.html</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
+ </url>
+ <url>
+  <loc>http://jonathan.stoppani.name/categories/python.html</loc>
+  <lastmod>2014-07-07</lastmod>
  </url>
  <url>
   <loc>http://jonathan.stoppani.name/categories/selenium.html</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
  </url>
  <url>
   <loc>http://jonathan.stoppani.name/categories/testing.html</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
  </url>
  <url>
   <loc>http://jonathan.stoppani.name/index.html</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
  </url>
  <url>
   <loc>http://jonathan.stoppani.name/posts/combining-pytest-and-selenium.html</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
+ </url>
+ <url>
+  <loc>http://jonathan.stoppani.name/posts/throttling-requests-using-flask-and-selenium.html</loc>
+  <lastmod>2014-07-07</lastmod>
  </url>
 </urlset>

@@ -2,7 +2,7 @@
 .. title: Combining py.test and Selenium
 .. slug: combining-pytest-and-selenium
 .. date: 2014/05/08 21:13:56
-.. tags: selenium, py.test, testing
+.. tags: selenium, py.test, testing, python
 .. link: 
 .. description: 
 .. type: text

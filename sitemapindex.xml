@@ -5,23 +5,31 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://jonathan.stoppani.name/categories/flask.xml</loc>
+  <lastmod>2014-07-07</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://jonathan.stoppani.name/categories/pytest.xml</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://jonathan.stoppani.name/categories/python.xml</loc>
+  <lastmod>2014-07-07</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://jonathan.stoppani.name/categories/selenium.xml</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://jonathan.stoppani.name/categories/testing.xml</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://jonathan.stoppani.name/rss.xml</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://jonathan.stoppani.name/sitemap.xml</loc>
-  <lastmod>2014-05-13</lastmod>
+  <lastmod>2014-07-07</lastmod>
  </sitemap>
 </sitemapindex>
