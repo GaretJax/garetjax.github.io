@@ -127,6 +127,23 @@ a {
 	}
 }
 
+:not(.code) > .codehilite {
+	$padding: 14px;
+	border-collapse: collapse;
+	width: $width + 2 * $padding;
+	margin-left: -$padding;
+
+	line-height: 20px;
+	font-size: 14px;
+
+	pre {
+		margin: 0;
+		padding: 15px $padding 18px;
+		font-family: 'Source Code Pro', monospace;
+		@include border-radius(4px);
+	}
+}
+
 div.tags {
 	color: #999;
 	font-size: 0.9em;
