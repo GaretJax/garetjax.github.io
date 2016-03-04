@@ -1,0 +1,11 @@
+Nikola
+Markdown>=2.4.0
+Jinja2>=2.7.2
+pyphen>=0.9.1
+micawber>=0.3.0
+pygal>=2.0.0
+typogrify>=2.0.4
+webassets>=0.10.1
+notebook>=4.0.0
+ipykernel>=4.0.0
+Twisted

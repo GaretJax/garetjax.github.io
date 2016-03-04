@@ -1,2 +1,2 @@
-css_dir = "../assets/css"
-sass_dir = "."
+css_dir = "themes/simple/assets/css"
+sass_dir = "themes/simple/scss"
