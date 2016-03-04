@@ -6,7 +6,7 @@ WORKDIR /app
 
 ADD requirements.txt.keep /app/requirements.txt
 
-RUN pip install -r /app/requirements.txt
+RUN pip install --index https://wheels.aldryn.net/d/pypi/aldryn-baseproject/ --no-deps -r /app/requirements.txt
 
 ADD . /app
 

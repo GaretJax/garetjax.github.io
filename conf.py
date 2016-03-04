@@ -55,7 +55,7 @@ BLOG_DESCRIPTION = "Jonathan Stoppani's personal blog."
 # What is the default language?
 DEFAULT_LANG = "en"
 LOCALES = {
-    DEFAULT_LANG: ''
+    DEFAULT_LANG: 'en_US.utf8',
 }
 
 # What other languages do you have?
