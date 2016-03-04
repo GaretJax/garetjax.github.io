@@ -32,7 +32,7 @@ mistune==0.7.2             # via nbconvert
 natsort==4.0.4             # via nikola
 nbconvert==4.1.0           # via notebook
 nbformat==4.0.1            # via nbconvert, notebook
-nikola==7.7.6
+nikola==7.7.5
 notebook==4.1.0
 path.py==8.1.2             # via pickleshare
 pexpect==4.0.1             # via ipython
